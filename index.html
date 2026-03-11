@@ -1,69 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - SubScale</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        h1 { color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { color: #444; margin-top: 30px; }
-        .last-updated { color: #888; font-style: italic; margin-bottom: 30px; }
-        .contact { background: #f0f7ff; padding: 20px; border-radius: 8px; margin-top: 40px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SubScale Privacy Policy</title>
+
+<meta name="description" content="SubScale Privacy Policy. Learn how SubScale protects your data with a privacy-first approach.">
+
+<style>
+
+:root{
+--bg:#f6f8fc;
+--card:#ffffff;
+--text:#1f2937;
+--muted:#6b7280;
+--accent:#4f6df5;
+--border:#e5e7eb;
+}
+
+*{box-sizing:border-box;}
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.7;
+}
+
+.topbar{
+background:white;
+border-bottom:1px solid var(--border);
+padding:14px 30px;
+display:flex;
+justify-content:center;
+}
+
+.logo{
+font-weight:700;
+font-size:18px;
+}
+
+.tagline{
+font-size:13px;
+color:var(--muted);
+margin-left:10px;
+}
+
+.container{
+max-width:900px;
+margin:50px auto 80px auto;
+background:var(--card);
+padding:55px;
+border-radius:12px;
+box-shadow:0 10px 35px rgba(0,0,0,0.06);
+}
+
+h1{
+margin-top:0;
+font-size:30px;
+}
+
+h2{
+margin-top:40px;
+font-size:22px;
+}
+
+.updated{
+color:var(--muted);
+margin-bottom:25px;
+font-size:14px;
+}
+
+.section-title{
+font-weight:600;
+margin-top:14px;
+}
+
+.footer{
+margin-top:60px;
+border-top:1px solid var(--border);
+padding-top:20px;
+text-align:center;
+color:var(--muted);
+font-size:14px;
+}
+
+.contact{
+margin-top:10px;
+font-weight:500;
+color:var(--accent);
+}
+
+@media (max-width:768px){
+
+.container{
+margin:20px;
+padding:30px;
+}
+
+h1{
+font-size:26px;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
-    <div class="container">
-        <h1>SubScale: Privacy Policy</h1>
-        <p class="last-updated">Last Updated: March 11, 2026</p>
 
-        <h2>1. Independent Tool Status</h2>
-        <p>SubScale is an <strong>independent subscription management tool</strong>. We use company logos and trademarks for the sole purpose of identifying subscription services for the user. SubScale is not affiliated with, endorsed by, or sponsored by any of the trademark owners whose logos appear within the app. All trademarks remain the property of their respective owners.</p>
+<div class="topbar">
+<div class="logo">SubScale</div>
+<div class="tagline">Privacy-first subscription management</div>
+</div>
 
-        <h2>2. Data Collection (Data Safety Compliance)</h2>
-        <p>To provide app functionality and maintain reliability, we collect:</p>
-        <ul>
-            <li><strong>Personal Information (Optional):</strong> You may optionally provide an Email Address or Mobile Number. This is used solely for personalisation and is 100% voluntary.</li>
-            <li><strong>Device Identifiers:</strong> We collect Device IDs (via Firebase) for App Functionality, Analytics, and Fraud Prevention.</li>
-            <li><strong>App Performance:</strong> We collect Crash Logs and Diagnostics (via Firebase Crashlytics) to ensure stability.</li>
-            <li><strong>Subscription Records:</strong> Your service names and costs are stored in a secure Firestore database siloed to your Anonymous UID.</li>
-        </ul>
+<div class="container">
 
-        <h2>3. Data Handling & Security</h2>
-        <ul>
-            <li><strong>Encryption:</strong> All data is encrypted in transit using HTTPS/SSL protocols.</li>
-            <li><strong>Zero Sharing:</strong> We do not share or sell any data to third-party marketers or brokers.</li>
-            <li><strong>No Ads:</strong> The app is 100% advertisement-free.</li>
-        </ul>
+<h1>SubScale Privacy Policy</h1>
 
-        <h2>4. Data Deletion (Your Rights)</h2>
-        <p>Users have the right to be forgotten. We provide a Self-Service Data Deletion tool within the app settings that allows you to:</p>
-        <ul>
-            <li>Wipe all local app data.</li>
-            <li>Permanently delete all Cloud Firestore records and your Anonymous UID.</li>
-        </ul>
+<div class="updated">Last Updated: March 11, 2026</div>
 
-        <div class="contact">
-            <h2>5. Contact for Support</h2>
-            <p>If you have any questions regarding this policy, please contact us at:<br>
-            <strong>jigarshah1301@gmail.com</strong></p>
-        </div>
-    </div>
+<p>
+This Privacy Policy describes how SubScale handles information when you use the SubScale mobile application. By using the application, you acknowledge that you have read and understood this policy. This policy applies only to the SubScale application and its related services.
+</p>
+
+
+<h2>1. Data Collection (Data Safety Compliance)</h2>
+
+<p>
+To provide app functionality and maintain reliability, we collect the following information:
+</p>
+
+<p class="section-title">Personal Information (Optional)</p>
+<p>
+Users may optionally provide an email address and/or mobile number for personalization purposes. Providing this information is completely voluntary, and the app functions without it.
+</p>
+
+<p class="section-title">Device Identifiers</p>
+<p>
+Anonymous device identifiers generated by Google Firebase may be used for app functionality, analytics, crash reporting, and fraud prevention.
+</p>
+
+<p class="section-title">App Performance</p>
+<p>
+We collect crash logs and diagnostic data via Google Firebase Crashlytics to monitor application performance and ensure stability.
+</p>
+
+<p class="section-title">Subscription Records</p>
+<p>
+Your subscription service names and costs are stored in a secure Google Cloud Firestore database and are linked only to an anonymous Firebase user identifier (UID).
+</p>
+
+
+<h2>2. Data Handling & Security</h2>
+
+<p class="section-title">Encryption</p>
+<p>
+All data is encrypted in transit using HTTPS/SSL protocols.
+</p>
+
+<p class="section-title">Zero Sharing</p>
+<p>
+We do not share or sell any data to third-party marketers or brokers.
+</p>
+
+<p class="section-title">No Ads</p>
+<p>
+The app is 100% advertisement-free.
+</p>
+
+
+<h2>3. Data Deletion (Your Rights)</h2>
+
+<p>
+Users have the right to delete their data. We provide a Self-Service Data Deletion tool within the app settings that allows you to:
+</p>
+
+<p>
+Wipe all local app data & permanently delete all Cloud Firestore records and your anonymous Firebase UID
+</p>
+
+
+<h2>4. Children's Privacy</h2>
+
+<p>
+SubScale is not intended for use by children under the age of 13. We do not collect personal information from children.
+</p>
+
+
+<h2>5. Transparency Commitment</h2>
+
+<p>
+SubScale is designed with a privacy-first philosophy. We intentionally collect the minimum amount of data necessary to operate the application reliably.
+</p>
+
+<p>
+We do not build advertising profiles, we do not sell user data, and we do not track users across other apps or websites.
+</p>
+
+
+<h2>6. Independent Tool Status</h2>
+
+<p>
+SubScale is an independent subscription management tool. We use company logos and trademarks solely for the purpose of identifying subscription services for users. SubScale is not affiliated with, endorsed by, or sponsored by any of the trademark owners whose logos appear within the app. All trademarks remain the property of their respective owners.
+</p>
+
+
+<h2>7. Third-Party Services</h2>
+
+<p>
+SubScale may use trusted third-party services to support core app functionality and reliability.
+</p>
+
+<p>
+These services may process limited technical data necessary for their operation. SubScale currently uses Google Firebase services, including Firebase Analytics, Cloud Firestore, and Firebase Crashlytics to provide app functionality, analytics, and crash reporting.
+</p>
+
+<p>
+These services operate under their own privacy policies. SubScale does not sell or share personal data with advertisers or data brokers.
+</p>
+
+
+<h2>8. Contact for Support</h2>
+
+<p>
+If you have any questions regarding this Privacy Policy, please contact:
+</p>
+
+<div class="contact">
+jigarshah1301@gmail.com
+</div>
+
+
+<div class="footer">
+© 2026 SubScale
+</div>
+
+</div>
+
 </body>
 </html>
